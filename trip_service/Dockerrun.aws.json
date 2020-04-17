@@ -1,0 +1,18 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "service1",
+      "image": "explorecanada/trip_service:v1.0",
+      "essential": true,
+      "memoryReservation": 256,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 8080
+        }
+      ]
+	} 
+	
+  ]
+}
